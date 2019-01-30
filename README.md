@@ -77,5 +77,3 @@
 
 
 
-
-GRENOBLE en FORCE
