@@ -6,11 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
-#
+
 User.destroy_all
 Article.destroy_all
 Category.destroy_all
-
 
 10.times do
   user = User.create!(first_name: Faker::Name.unique.first_name, last_name: Faker::Name.unique.last_name, email: Faker::Internet.email)
@@ -31,5 +30,3 @@ end
 15.times do
   like = Like.create!(users_id: rand(1..10), articles_id: rand(1..10))
 end
-
-p "Created  movies"
