@@ -8,7 +8,7 @@
 - rails db:migrate:status # Tu verras que les tables sont créées,
 - rails db:migrate # Ça migre au calme,
 - rails db:migrate:status # Check de la migration,
-- rails db:seed # Peuple les champs des tableaux,
+- rails db:seed # Peuple les champs des tableaux, si pb, essayer un `db:drop` puis `db:create` puis recommencer la manip
 - rails console,
 - Balade toi dans la BDD !
 
@@ -16,6 +16,6 @@
 
 - Maxime
 - Quentin
-- Yannis
+- Iannis
 - Charles
 - Guillaume
