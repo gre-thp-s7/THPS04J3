@@ -24,9 +24,9 @@ end
 end
 # Création de 15 instances de la class CreateComments afin de rajouter 15 commentaires dans le tableau comment
 15.times do
-  commentaire = Comment.create!(name: Faker::TheITCrowd.unique.quote, users_id: rand(1..10), articles_id: rand(1..10))
+  commentaire = Comment.create!(name: Faker::TheITCrowd.unique.quote, user_id: rand(1..10), article_id: rand(1..10))
 end
 # Création de 15 instances de la class Createlikes afin de rajouter 15 likes dans le tableau like
 15.times do
-  like = Like.create!(users_id: rand(1..10), articles_id: rand(1..10))
+  like = Like.create!(user_id: rand(1..10), article_id: rand(1..10))
 end
